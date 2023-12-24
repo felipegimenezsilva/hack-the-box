@@ -1,5 +1,8 @@
 <html>
   <body>
     <li><a href="{{ url_for('/', filename='flag.txt') }}">test</a>
+    <p>
+      {{ requests.get("http://127.0.0.1:1337/secret").text }}
+    </p>
   </body>
 </html>
